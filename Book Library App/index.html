@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Book Search App</title>
+  </head>
+  <body>
+        <div class="jumbotron jumbotron-fluid">
+    
+                <h1 class="display-5 ml-5">Book Library</h1>        
+              
+            </div>
+    <div class="container">
+      <form class="form-inline">
+        <input id="languageInput" class="form-control mr-sm-2 mb-3" type="text" name="language" placeholder="English">
+        <button id="submit" type="submit" class="btn btn-primary mb-3">Search</button>
+      </form>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Author</th>
+            <th scope="col">Country</th>
+            <th scope="col">Language</th>
+            <th scope="col">Link</th>
+            <th scope="col">Pages</th>
+            <th scope="col">Year</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- populated by api call and search query -->
+        </tbody>
+      </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
